@@ -7,6 +7,7 @@
 package projetogithub;
 
 import javax.swing.JOptionPane;
+import static javax.swing.JOptionPane.NO_OPTION;
 import static javax.swing.JOptionPane.YES_NO_OPTION;
 
 
@@ -43,11 +44,14 @@ public class Git extends javax.swing.JFrame {
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 51, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("GitHub Test");
+        jLabel1.setText("Projeto GitHub Test");
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setText("Digite seu nome :");
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel3.setText("Digite seu Endereço :");
 
         brEnviar.setText("Enviar");
@@ -106,6 +110,12 @@ public class Git extends javax.swing.JFrame {
         );
         campoNome.setText("");
         campoEndereco.setText("");
+        
+        int  opcao = 0;
+        JOptionPane.showConfirmDialog(null, 
+                "Deseja cadastrar outra pessoa?","Atenção" ,JOptionPane.YES_NO_OPTION);
+               if(opcao == NO_OPTION){
+               ;}
     }//GEN-LAST:event_brEnviarActionPerformed
 
     /**
