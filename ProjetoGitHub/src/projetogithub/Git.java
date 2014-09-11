@@ -115,7 +115,9 @@ public class Git extends javax.swing.JFrame {
         JOptionPane.showConfirmDialog(null, 
                 "Deseja cadastrar outra pessoa?","Atenção" ,JOptionPane.YES_NO_OPTION);
                if(opcao == NO_OPTION){
+                   System.out.println("Executou");
                ;}
+               System.exit(0);
     }//GEN-LAST:event_brEnviarActionPerformed
 
     /**
