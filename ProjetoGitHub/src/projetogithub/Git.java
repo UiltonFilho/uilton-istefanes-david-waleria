@@ -105,19 +105,28 @@ public class Git extends javax.swing.JFrame {
 
     private void brEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brEnviarActionPerformed
         // TODO add your handling code here:
+        String nome = campoNome.getText();
+        String endereco = campoEndereco.getText();
+        
+        
         JOptionPane.showMessageDialog(null,
-        "Dados Armazenados com Sucesso"
+        "Nome: " + nome + "\n"
+                + "Endereco: " + endereco + "\n "
+                + "Foram Armazenados com Sucesso!"
         );
         campoNome.setText("");
         campoEndereco.setText("");
         
         int  opcao = 0;
+        
+        opcao =
         JOptionPane.showConfirmDialog(null, 
                 "Deseja cadastrar outra pessoa?","Atenção" ,JOptionPane.YES_NO_OPTION);
-               if(opcao == NO_OPTION){
-                   System.out.println("Executou");
+        
+               if(opcao == JOptionPane.NO_OPTION){
+                   System.exit(0);
                ;}
-               System.exit(0);
+               
     }//GEN-LAST:event_brEnviarActionPerformed
 
     /**
